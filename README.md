@@ -2,7 +2,7 @@
 
 ## Developed in netbeans with JAVA EE, Apache, Websockets, HTML, Javascript/Ajax
 
-##clonning Repository 
+## clonning Repository 
 
 ```
 git clone https://github.com/SimonKravtsov/StickerBoardGame.git
