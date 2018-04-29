@@ -1,6 +1,6 @@
 # JAVA project stickerboard using WEBsockets with live chat
 
-## Developed in netbeans with JAVA EE, Apache, Websockets, HTML, Javascript/Ajax
+## Developed in netbeans with JAVA EE, Apache, Websockets, HTML, Javascript/Ajax, CSS
 
 ## clonning Repository 
 
