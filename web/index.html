@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sticker Story</title>
+    <link href="resources/styles.css" rel="stylesheet" type="text/css" >
+    <script src="resources/story-page.js" type="text/javascript"></script>
+    <script src="resources/websocket.js" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Plan a game Strategy</h1>
+    </header>
+    <nav>
+      Drag champions from the left bar to the map.
+    </nav>
+    <aside>
+      <h2>Champions</h2>
+      <div id="stickerContainer">
+          
+        <img src="resources/stickers/azir.png" 
+             data-sticker="azir.png"
+             style="float:left" 
+             draggable="true" ondragstart="drag(event);"
+             >
+        <img src="resources/stickers/zed.png" 
+             data-sticker="zed.png"
+             style="float:left" 
+             draggable="true" ondragstart="drag(event);" >
+        <img src="resources/stickers/morgana.png" 
+             data-sticker="morgana.png"
+             style="float:left" 
+             draggable="true" ondragstart="drag(event);" >
+        <img src="resources/stickers/garen.png" 
+             data-sticker="garen.png"
+             style="float:left" 
+             draggable="true" ondragstart="drag(event);" >
+        <img src="resources/stickers/zyra.png" 
+             data-sticker="zyra.png"
+             style="float:left" 
+             draggable="true" ondragstart="drag(event);" >
+        <img src="resources/stickers/tristana.png" 
+             data-sticker="tristana.png"
+             style="float:left" 
+             draggable="true" ondragstart="drag(event);" >
+        <img src="resources/stickers/karthus.png" 
+             data-sticker="karthus.png"
+             style="float:left" 
+             draggable="true" ondragstart="drag(event);" >
+        <img src="resources/stickers/riven.png" 
+             data-sticker="riven.png"
+             style="float:left" 
+             draggable="true" ondragstart="drag(event);" >
+        <img src="resources/stickers/syndra.png" 
+             data-sticker="syndra.png"
+             style="float:left" 
+             draggable="true" ondragstart="drag(event);" >
+        <img src="resources/stickers/ezreal.png" 
+             data-sticker="ezreal.png"
+             style="float:left" 
+             draggable="true" ondragstart="drag(event);" >
+        <img src="resources/stickers/amumu.png" 
+             data-sticker="amumu.png"
+             style="float:left" 
+             draggable="true" ondragstart="drag(event);" >
+        <img src="resources/stickers/draven.png" 
+             data-sticker="draven.png"
+             style="float:left" 
+             draggable="true" ondragstart="drag(event);" >
+        <img src="resources/stickers/xinzhao.png" 
+             data-sticker="xinzhao.png"
+             style="float:left" 
+             draggable="true" ondragstart="drag(event);" >
+        <img src="resources/stickers/graves.png" 
+             data-sticker="graves.png"
+             style="float:left" 
+             draggable="true" ondragstart="drag(event);" >
+      </div>
+    </aside>
+    <div id="content">
+      <canvas id="board" width="1000" height="580" ondrop="drop(event);"
+              ondragover="allowDrop(event);">
+        Canvas Not Supported.
+      </canvas>
+      <img src="resources/map.jpg" id="background_img"
+           width="1000" height="580" style="display:none;"/>
+    </div>
+    <footer>
+      <small>Can see co-ordinatetes of champions and chat with people who are also connected</small>
+      <ol>
+        <li onclick="toggleLog();">Log</li>
+      </ol>
+      <ol>
+        <li onclick="toggleChat();">Chat</li>
+      </ol>
+    </footer>
+    <div id="logContainer">
+      <h2>log</h2>
+      <div id="log">
+      </div>
+      
+      
+<!--      <div id="chatdiv">
+      </div>
+      <textarea id="chat" rows="20" cols="100" readonly="readonly" 
+                style="resize:none"></textarea>
+      <br/>
+      <input type="text" id="clienttext"/>
+      <input type="button" value="send" onclick="sendText()"/>-->
+    </div>
+      <div id="chatContainer">
+      <h2>Chat</h2>
+      <div id="chatdiv">
+      </div>
+      <textarea id="chat" rows="20" cols="100" readonly="readonly" 
+                style="resize:none"></textarea>
+      <br/>
+      <input type="text" id="clienttext"/>
+      <input type="button" value="send" onclick="sendText()"/>
+    </div>
+  </body>
+</html>
